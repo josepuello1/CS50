@@ -1,0 +1,56 @@
+.nav{
+    /* display: table; */
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: space-between;
+}
+
+nav ul{
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+#fieldset{
+    margin-top: 50px;
+}
+#formname{
+    margin-top: 30px;
+}
+#lastnamediv{
+    margin-top: 10px;
+}
+
+
+/* .container {
+    width: 500px;
+    clear: both;
+  }
+
+  .container input {
+    width: 500%;
+    clear: both;
+  } */
+form{
+    display: table;
+}
+p{
+display: table-row;
+}
+
+label{
+display: table-cell;
+padding: 8px 5px 8px 8px;
+}
+
+input{
+display: table-cell;
+}
+
+#submit{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 38px;
+    background-color: aqua;
+}

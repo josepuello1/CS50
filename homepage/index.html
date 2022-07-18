@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+        <link href="styles.css" rel="stylesheet">
+        <title>Introduction</title>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function(){
+
+                var myName = document.querySelector('#namebutton');
+                var myAge = document.querySelector('#agebutton');
+                var myCountry = document.querySelector('#countrybutton')
+                var myEducation = document.querySelector('#educationbutton')
+
+                var content0 = document.getElementById('content0')
+                var content1 = document.getElementById('content1');
+                var content2 = document.getElementById('content2');
+                var content3 = document.getElementById('content3');
+
+                myName.addEventListener('click', function(){
+                    content0.style.display = "none";
+                    content1.style.display = "block";
+                    content2.style.display = "none";
+                    content3.style.display = "none";
+                    content4.style.display = "none";
+                })
+
+                myAge.addEventListener('click', function(){
+                    content0.style.display = "none";
+                    content1.style.display = 'none';
+                    content2.style.display = "block";
+                    content3.style.display = "none";
+                    content4.style.display = "none";
+                })
+
+                myCountry.addEventListener('click', function(){
+                    content0.style.display = "none";
+                    content1.style.display = 'none';
+                    content2.style.display = "none";
+                    content3.style.display = "block";
+                    content4.style.display = "none";
+                })
+
+                myEducation.addEventListener('click', function(){
+                    content0.style.display = "none";
+                    content1.style.display = 'none';
+                    content2.style.display = "none";
+                    content3.style.display = "none";
+                    content4.style.display = "block";
+                })
+            })
+        </script>
+    </head>
+
+    <body>
+        <div class="container">
+                <div class="jumbotron text-center">
+                    <div class="header">
+                        <h1>Welcome to Jose's Page!</h1>
+                    </div>
+                </div>
+            <nav class="navbar navbar-inverse fixed-top">
+                <div class="container">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="navbar-brand" href="index.html">Welcome</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="navbar-brand" href="website3.html">Business</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="navbar-brand" href="website4.html">Personal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="navbar-brand" href="website6.html">Contact Me</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <h2>Introduction</h2>
+            <p></p>
+            <hr>
+            <div id="introparagraph">
+                <p>Hello! Welcome to my homepage. Here I will present a brief introduction about myself, my business dealings, personal projects, some thoughts, and ways to contact me.</p>
+            </div>
+            <p></p>
+            <h4 id="reveal">Click on each below to reveal!</h4>
+
+            <div class="container" id="revealbuttons">
+                <div id="reveal1">
+                    <button id="namebutton" >NAME</button>
+                </div>
+                <div id="reveal2">
+                    <button id="agebutton" >AGE</button>
+                </div>
+                <div id="reveal3">
+                    <button id="countrybutton">COUNTRY</button>
+                </div>
+                <div id="reveal4">
+                    <button id="educationbutton">HIGHER ED.</button>
+                </div>
+            </div>
+
+            <div id="emptyspace">
+                <div id="content0">
+                    <p>
+                        Click either of the above to reveal...
+                    </p>
+                </div>
+                <div id="content1">
+                    <p id="nameid">Jose Pichardo Puello</p>
+                    <a href="https://www.linkedin.com/in/josepichardopuello">LinkedIn</a>
+                </div>
+                <div id="content2">
+                    <p id="ageid">Born in April 1993</p>
+                </div>
+                <div id="content3">
+                    <div class="container">
+                        <a href="https://www.godominicanrepublic.com/">
+                            <img src="drmap.png" alt="Map of the Dominican Republic and caribbean region" id="mapimage">
+                        </a>
+                    </div>
+                </div>
+                <div id="content4">
+                    <div class="container">
+                        <p>Click on either image to view the Degree</p>
+                        <div class="row">
+                            <div class="col-lg-6 col-xs-6 thumbnail">
+                                <a href="https://www.manchester.ac.uk/study/undergraduate/courses/2022/12952/bsc-computer-science-with-an-integrated-foundation-year/">
+                                    <img src="manchester.png" alt="University of Manchester, Manchester, UK" id="manc">
+                                </a>
+                            </div>
+                            <div class="col-lg6-6 col-xs-6 thumbnail">
+                                <a href="https://www.lasallecollege.com/business-and-technologies-school/dec-business-management-courses">
+                                    <img src="lasalle.jpg" alt="LaSalle College, Montreal, Canada" id="las">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,16 @@
+sort1 uses: Bubble sort.
+
+How do you know?: It is the slowest of the three.
+
+sort2 uses: Merge sort
+
+How do you know?: It is the fastest of the three
+
+sort3 uses: Selection sort
+
+How do you know?: Is is the second fastest of the three
+
+
+random100000.txt = sort 1 = 0.393, sort 2 = 0.079, sort 3 = 0.154
+reversed50000.txt = sort 1 = 5.795s , sort 2 = 0.561s, sort 3 = 3.318s
+

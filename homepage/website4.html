@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+        <link href="website4.css" rel="stylesheet">
+        <title>Personal</title>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function(){
+
+                var sport = document.querySelector('#sportbutton');
+                var music = document.querySelector('#musicbutton');
+                var food = document.querySelector('#foodbutton')
+
+                var content0 = document.getElementById('content0')
+                var content1 = document.getElementById('content1');
+                var content2 = document.getElementById('content2');
+                var content3 = document.getElementById('content3');
+
+                sport.addEventListener('click', function(){
+                    content0.style.display = "none";
+                    content1.style.display = "block";
+                    content2.style.display = "none";
+                    content3.style.display = "none";
+                })
+
+                music.addEventListener('click', function(){
+                    content0.style.display = "none";
+                    content1.style.display = 'none';
+                    content2.style.display = "block";
+                    content3.style.display = "none";
+                })
+
+                food.addEventListener('click', function(){
+                    content0.style.display = "none";
+                    content1.style.display = 'none';
+                    content2.style.display = "none";
+                    content3.style.display = "block";
+                })
+            })
+        </script>
+    </head>
+    <body>
+        <div class="container">
+                <div class="jumbotron text-center">
+                    <div class="header">
+                        <h1>Welcome to Jose's Page!</h1>
+                    </div>
+                </div>
+            <nav class="navbar navbar-inverse fixed-top">
+                <div class="container">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="navbar-brand" href="index.html">Welcome</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="navbar-brand" href="website3.html">Business</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="navbar-brand" href="website4.html">Personal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="navbar-brand" href="website6.html">Contact Me</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <h4 id="reveal">Click on each below to reveal my interests and passions in the below categories!</h4>
+        <div class="container" id="revealbuttons">
+            <div id="reveal1">
+                <button id="sportbutton" >SPORT</button>
+            </div>
+            <div id="reveal2">
+                <button id="musicbutton" >MUSIC</button>
+            </div>
+            <div id="reveal3">
+                <button id="foodbutton">FOOD</button>
+            </div>
+        </div>
+
+        <div id="emptyspace">
+            <div id="content0">
+                <p>
+                    Click either of the above to reveal...
+                </p>
+            </div>
+            <div id="content1">
+                <p>Gymnastics</p>
+                <p>Swimming</p>
+                <p>Tennis</p>
+            </div>
+            <div id="content2">
+                <p>House Music</p>
+                <p>Trance Music</p>
+                <p>Techno Music</p>
+                <p>Classic Rock</p>
+                <p>Psychedelic Rock</p>
+                <p>Jazz</p>
+            </div>
+            <div id="content3">
+                <p id="food">Japanese Cuisine</p>
+            </div>
+        </div>
+    </body>
+</html>
