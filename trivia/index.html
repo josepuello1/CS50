@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"> -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            // TODO: Add code to check answers to questions
+            document.addEventListener('DOMContentLoaded', function(){
+
+                var correct = document.querySelector('#correct');
+                correct.addEventListener('click', function(){
+                    correct.style.backgroundColor = 'Green'
+                    document.querySelector('#correctornot').innerHTML = "Correct!"
+                })
+
+                var incorrect1 = document.querySelector('#incorrect1');
+                incorrect1.addEventListener('click', function(){
+                    incorrect1.style.backgroundColor = 'Red'
+                    document.querySelector('#correctornot').innerHTML = "Incorrect!"
+                })
+
+                var incorrect2 = document.querySelector('#incorrect2');
+                incorrect2.addEventListener('click', function(){
+                    incorrect2.style.backgroundColor = 'Red'
+                    document.querySelector('#correctornot').innerHTML = "Incorrect!"
+                })
+
+                var incorrect3 = document.querySelector('#incorrect3');
+                incorrect3.addEventListener('click', function(){
+                    incorrect3.style.backgroundColor = 'Red'
+                    document.querySelector('#correctornot').innerHTML = "Incorrect!"
+                })
+
+                var checkAnswerButton = document.querySelector('#submitbutton')
+                checkAnswerButton.addEventListener('click', function(){
+                    var correcttext = document.querySelector('#answer')
+                    if (correcttext.value === "Sweden" || correcttext.value === "sweden"){
+
+                        correcttext.style.backgroundColor = '#4AFD73';
+                        document.querySelector('#correctornot1').innerHTML = 'Correct!'
+                    } else {
+                        document.querySelector('#correctornot1').innerHTML = 'Incorrect!';
+                        correcttext.style.backgroundColor = 'Red';
+                    }
+    })
+
+            })
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="jumbotron text-center">
+                <div class="header">
+                    <h1>Trivia!</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                <div class="container">
+                    <div class="section3">
+                        <h3>
+                            <p> Question 1:</p>
+                            <p>How fast was the first person who got a speeding ticket traveling?</p>
+                            <p id="correctornot">...</p>
+                        </h3>
+                        <!-- Answers-->
+                        <!-- <div class="row"> -->
+                            <div class="button">
+                                <button type="button" id="correct" class="btn btn-secondary">8mph</button>
+                                <button type="button" id="incorrect1" class="btn btn-secondary">16mph</button>
+                                <button type="button" id="incorrect2" class="btn btn-secondary">32mph</button>
+                                <button type="button" id="incorrect3" class="btn btn-secondary">64mph</button>
+                            <!-- </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                <div class="section">
+                    <h2>Part 2: Free Response</h2>
+                    <hr>
+                    <!-- TODO: Add free response question here -->
+                    <div class="container">
+                        <h3>
+                            <p>Question 2:</p>
+                            <p>Which country has the most generous parental leave policy?</p>
+                            <p id="correctornot1">...</p>
+                        </h3>
+
+                    <input type="text" id="answer" name="name" placeholder="Enter Answer">
+                    <input  type="submit" id='submitbutton' name="submitbutton" value="Check Answer">
+                     </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
